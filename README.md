@@ -40,7 +40,7 @@ A Gen-Z vibe blog platform built with a 3-tier architecture — React frontend, 
 ## 📁 Project Structure
 
 ```
-Jerney/
+devsecops/
 ├── frontend/                # React (Vite) frontend
 │   ├── src/                 # React components & pages
 │   ├── nginx.conf           # Nginx config for serving the app
@@ -68,7 +68,7 @@ Jerney/
 
 ```bash
 # From your local machine
-scp -r -i your-key.pem ./Jerney ubuntu@<EC2_PUBLIC_IP>:~/Jerney
+scp -r -i your-key.pem ./devsecops ubuntu@<EC2_PUBLIC_IP>:~/devsecops
 ```
 
 ### Step 2: SSH into the Instance
@@ -82,7 +82,7 @@ ssh -i your-key.pem ubuntu@<EC2_PUBLIC_IP>
 The `deploy/setup.sh` script installs everything and configures the app automatically:
 
 ```bash
-cd ~/Jerney
+cd ~/devsecops
 chmod +x deploy/setup.sh
 ./deploy/setup.sh
 ```
